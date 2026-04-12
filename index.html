@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--#include file="/inc/global.html"-->
+<html dir="ltr"> <head>
+        <title>ABSOV.com</title>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <meta charset="utf-8"></meta>
+        <!--#include file="/inc/googleanalytics.html"-->
+    <script type="text/JavaScript">
+    	var myAllURL = '/en';
+    	var myRuURL = '/ru';
+    	var myLang = navigator.language.substr(0, 2);
+       if ('<!--#echo var="loyal" encoding="none"-->' != 'YES') {
+                window.location.href = myAllURL;
+        } else if (myLang == 'ru') {
+                window.location.href = myRuURL;
+        } else {
+                window.location.href = myAllURL;
+        }
+
+  	</script>
+
+    </head> 
+    <body lang="en" dir="ltr" class="mail"> 
+    <!--#include file="/inc/yacounter.html"-->
+    <h1>ABSOV.com</h1>
+
+
+   <p>The site contains copyrighted material of the composer and teacher <b>Maksym ABAKUMOV</b>. More detailed information is contained in the localized versions of the site:</p>
+
+    <p><a href="/en">The English version of the site</a></p>
+    <p><a href="/ru">Russian version of the site</a></p>
+
+</body> 
+</html>
+
+
+

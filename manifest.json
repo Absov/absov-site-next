@@ -1,0 +1,11 @@
+{
+  "name": "Максим Абакумов",
+  "short_name": "Absov",
+  "icons": [{
+        "src": "/favicon.svg",
+        "type": "image/svg+xml"
+      }],
+  "display": "standalone",
+  "background_color": "#e6001c",
+  "theme_color": "#009109"
+}

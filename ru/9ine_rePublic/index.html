@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!--#set var="lang" value="ru" -->
+<!--#set var="pagename" value="9ine rePublic" -->
+<!--#set var="topic" value="" -->
+<!--#set var="topicfolder" value="" -->
+<!--#set var="description" value="Музыкальный проект Феликса Марковича"  -->
+<!--#set var="keywords" value="9ine rePublic, музыкальный проект, Феликс Маркович, песни, популярная музыка" -->
+<!--#set var="ogimage" value="/img/canva/9inerePublicB.png" -->
+
+<!--#include file="/inc/global.html"-->
+<!--#include file="/$lang/inc/locals.html"-->
+<!--#include file="/inc/colors.html"-->
+<!--#include file="/inc/top.html"-->
+<!--#include file="/$lang/inc/topmenu.html"-->
+<!--#include file="/$lang/inc/leftmenu1.html"-->
+
+<!--#include file="/$lang/inc/leftmenu2.html"-->
+
+
+<!--# if expr="$loyal = YES" -->
+
+
+<!-- Список для музыкального плеера -->
+<script type="text/javascript" >
+
+
+
+    var Play01 = [
+        {   title: 'Party Party (feat. OYME)', 
+            author: '-', 
+            link: 'https://www.dropbox.com/s/k7jhfhfxt0mv2o8/01%209ine%20rePublic-Party%20Party%20%28feat.%20OYME%29.mp3', 
+            type: 'dropbox'},
+
+        {   title: 'Carnival', 
+            author: '-', 
+            link: 'https://www.dropbox.com/s/n9w1s8wjrgd8hjy/02%209ine%20rePublic-Carnival.mp3', 
+            type: 'dropbox'},
+
+        {   title: 'Kalimba de Luna', 
+            author: '-', 
+            link: 'https://www.dropbox.com/s/ykileom3jitp8ql/03%209ine%20rePublic-Kalimba%20de%20Luna.mp3', 
+            type: 'dropbox'},
+
+        {   title: 'Broken Hearts', 
+            author: '-', 
+            link: 'https://www.dropbox.com/s/wvr6ul4ncjpobiy/04%209ine%20rePublic-Broken%20Hearts.mp3', 
+            type: 'dropbox'},
+
+        {   title: 'Forever not yours', 
+            author: '-', 
+            link: 'https://www.dropbox.com/s/gnmnyh05wsn8c9a/05%209ine%20rePublic-Forever%20not%20yours.mp3', 
+            type: 'dropbox'},
+
+        {   title: 'Leave A Light', 
+            author: '-', 
+            link: 'https://www.dropbox.com/s/faiy6i51c0p4h9w/06%209ine%20rePublic-LeaveALight.mp3', 
+            type: 'dropbox'},
+
+        {   title: 'Per un’ora d’amore', 
+            author: '-', 
+            link: 'https://www.dropbox.com/s/074y52vckjt0ph3/07%209ine%20rePublic%20-%20Per%20un%E2%80%99ora%20d%E2%80%99amore.mp3', 
+            type: 'dropbox'},
+
+        {   title: 'Heart of stone', 
+            author: '-', 
+            link: 'https://www.dropbox.com/s/lv359ryvxbsij37/08%209ine%20rePublic-Heart%20of%20stone.mp3', 
+            type: 'dropbox'}
+
+    ];
+
+    var Play02 = [
+        {   title: 'Forever not yours - Guitar version', 
+            author: '-', 
+            link: 'https://www.dropbox.com/s/olzts3pc5iqgvve/09%209ine%20rePublic-Forever%20not%20yours-Guitar%20version.mp3', 
+            type: 'dropbox'},
+
+        {   title: 'Leave ALight - Club version', 
+            author: '-', 
+            link: 'https://www.dropbox.com/s/ibvz3xo7eldd2tb/10%209ine%20rePublic-LeaveALight%20%28Club%20version%29.mp3', 
+            type: 'dropbox'},
+
+        {   title: 'Per un’ora d’amore - Orchestra version', 
+            author: '-', 
+            link: 'https://www.dropbox.com/s/vx73k24kldym9sm/11%209ine%20rePublic-Per%20un%E2%80%99ora%20d%E2%80%99amore%20%28orchestra%20version%29.mp3', 
+            type: 'dropbox'}
+
+        
+    ];
+
+
+  var PlayItem = 0;
+
+
+  function WritePlaylist(MyList, MyNum) {
+
+    const Player01 = document.getElementById('Player01');
+    const MyNote = document.getElementById('Note01');
+
+    MyList.forEach(function(item, i, arr) {
+
+      document.write('<LI>');
+      document.write('<a href="##" id="link' + MyNum + i + '">');
+      /* document.write(item['author']);
+      document.write(' - '); */
+      document.write(item['title']);
+      document.write('</a>');
+      document.write('</LI>');
+      var MyLink = item['link'];
+      var MyLink2;
+      if (item['type'] == 'dropbox') {
+        MyLink += '?raw=1';
+      };
+
+      if(i < arr.length - 1) {
+        MyLink2 = arr[i+1]['link'];
+        if (arr[i+1]['type'] == 'dropbox') {
+            MyLink2 += '?raw=1';
+        };
+
+      } else {
+        MyLink2 = "";
+      }
+
+      const MyHref = document.getElementById('link' + MyNum + i);
+      MyHref.onclick = (e) => {
+        /* var CurNote = 'Играет: <b>' + item['author'] +' - '+ item['title'] + '</b>'; */
+        var CurNote = 'Играет: <b>' + item['title'] + '</b>';
+        Player01.src = MyLink; 
+        MyNote.innerHTML = CurNote;
+        Player01.play();
+
+        const MyHref2 = document.getElementById('link' + MyNum + (i + 1));
+            if(MyHref2 !== null) {
+                Player01.onended = (e) => {
+                    MyHref2.onclick();
+                };
+            } else {
+                Player01.onended = (e) => {
+                };
+            }
+
+      };
+
+      
+    });
+
+
+  }
+
+
+</script>
+<noscript><p>У вас не поддерживается Javascript! К сожалению, некоторые функции сайта не доступны.</p></noscript>
+
+
+
+<img src="/img/canva/9inerePublicA.png" class="mainphoto" width="100%" align="center" hspace="0" vspace="0" alt="9ine rePublic" />
+
+
+<br/><br/>
+
+
+<p>    
+    <audio id="Player01" controls="controls" preload="metadata">
+            <source src=""/>
+
+    </audio>
+</p>
+<p id="Note01"></p>
+
+<p>Музыкальный проект <b>Феликса Марковича</b>:</p>
+
+
+
+<!--#include file="/inc/$mobile_rewrite/table01.html"-->
+
+<H2>9ine rePublic</H2>
+<OL class="mylist2">
+
+<!-- Список для музыкального плеера -->
+<script type="text/javascript" >
+    WritePlaylist(Play01, 100);
+</script>
+<noscript><p>У вас не поддерживается Javascript! К сожалению, некоторые функции сайта не доступны.</p></noscript>
+
+
+<br/><br/>
+</OL>
+<!--#include file="/inc/$mobile_rewrite/table02.html"-->
+
+<H2>Remix</H2>
+
+
+<OL class="mylist2">
+
+
+<!-- Список для музыкального плеера -->
+<script type="text/javascript" >
+    WritePlaylist(Play02, 200);
+</script>
+<noscript><p>У вас не поддерживается Javascript! К сожалению, некоторые функции сайта не доступны.</p></noscript>
+
+
+<br/><br/>
+
+
+
+</OL>
+
+
+
+
+<!--#include file="/inc/$mobile_rewrite/table03.html"-->
+
+<!--#include file="/inc/$mobile_rewrite/table01.html"-->
+
+<p><iframe width="100%" height="315" src="https://www.youtube.com/embed/pu6mN4zHyLU" title="Kalimba de Luna" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+<!--#include file="/inc/$mobile_rewrite/table02.html"-->
+
+<!--#include file="/inc/$mobile_rewrite/table03.html"-->
+
+
+<p>Связь с автором проекта: <a href="mailto:7228209@mail.ru">7228209@mail.ru</a></p>
+
+
+<!--#include file="/inc/telegramshare.html"-->
+
+<!--# else -->
+
+
+<!--#include file="/inc/maintenance.html"-->
+
+
+<!--# endif -->
+
+
+
+
+<!--#include file="/inc/bottom.html"-->
+

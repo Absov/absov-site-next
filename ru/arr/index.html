@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--#set var="lang" value="ru" -->
+<!--#set var="pagename" value="Аранжи&shy;ровка" -->
+<!--#set var="topic" value="" -->
+<!--#set var="topicfolder" value="" -->
+<!--#set var="description" value="Эстрада, рок, поп, современные жанры"  -->
+<!--#set var="keywords" value="аранжировка, эстрада, рок, поп, современные жанры" -->
+<!--#set var="ogimage" value="/img/canva/ArrBanner.png" -->
+
+<!--#include file="/inc/global.html"-->
+<!--#include file="/$lang/inc/locals.html"-->
+<!--#include file="/inc/colors.html"-->
+<!--#include file="/inc/top.html"-->
+<!--#include file="/$lang/inc/topmenu.html"-->
+<!--#include file="/$lang/inc/leftmenu1.html"-->
+
+<!--#include file="/$lang/inc/leftmenu2.html"-->
+
+
+<!--# if expr="$loyal = YES" -->
+
+
+<!-- Список для музыкального плеера -->
+<script type="text/javascript" >
+
+
+
+    var Play01 = [
+        {   title: 'Я к тебе не подойду', 
+            music: 'Музыка  <b>Давида  Тухманова</b>', 
+            lyrics: 'Слова  <b>Леонида  Дербенёва</b>  и  <b>Игоря  Шаферана</b>', 
+            voice: 'Вокал: <b>Феликс Маркович</b>',
+            link: 'https://www.dropbox.com/s/2khhwzj8gby41nk/%D0%AF%20%D0%BA%20%D1%82%D0%B5%D0%B1%D0%B5%20%D0%BD%D0%B5%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B9%D0%B4%D1%83%20-%20Felix%20Markovich.mp3', 
+            banner: '/img/canva/YaKTebe.png',
+            type: 'dropbox'},
+        {   title: 'В городе моем...', 
+            music: 'Музыка  <b>Аллы Пугачевой</b>', 
+            lyrics: 'Слова  <b>Ильи Резника</b>', 
+            voice: 'Вокал: <b>Феликс Маркович</b>',
+            link: 'https://www.dropbox.com/s/jpxlcxg24v80sde/%D0%92%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B5%20%D0%BC%D0%BE%D1%91%D0%BC...%20-%20Felix%20Markovich.mp3', 
+            banner: '/img/canva/VGorode.png',
+            type: 'dropbox'},
+        {   title: 'Музыка...', 
+            music: 'Музыка  <b>Леонида Агутина</b>', 
+            lyrics: 'Слова  <b>Анжелики Варум</b>', 
+            voice: 'Вокал: <b>Феликс Маркович</b>',
+            link: 'https://www.dropbox.com/s/wjt92ys7jyt1d3c/%D0%9C%D1%83%D0%B7%D1%8B%D0%BA%D0%B0%20-%20Felix%20Markovich.mp3', 
+            banner: '/img/canva/Music01.png',
+            type: 'dropbox'}
+
+
+    ];
+
+    var Play02 = [
+        {   title: 'Broken Hearts...', 
+            music: 'Музыка  <b>Тим Норелл</b>', 
+            lyrics: 'Слова  <b>Бьерн Хокансон</b>', 
+            voice: 'Вокал: <b>Феликс Маркович</b>',
+            link: 'https://www.dropbox.com/s/h9ocddh5q7z46zp/9ine%20rePublic-Broken%20Hearts.mp3', 
+            banner: '/img/canva/Broken01.png',
+            type: 'dropbox'},
+        {   title: 'Carnival', 
+            music: '<b>Магнус Свенингссон, ', 
+            lyrics: 'Петер Свенссон</b>', 
+            voice: 'Вокал: <b>Феликс Маркович</b>',
+            link: 'https://www.dropbox.com/s/m6pa1v3fmcnt8cl/9ine%20rePublic-Carnival.mp3', 
+            banner: '/img/canva/Carnival.png',
+            type: 'dropbox'},
+        {   title: 'Kalimba De Luna', 
+            music: '<b>Тони Эспозито, Мауро Малавази, Ремо Ликастро, Джузеппе Аморузо, Жанлуиджи Ди Франко</b>', 
+            lyrics: '', 
+            voice: 'Вокал: <b>Феликс Маркович</b>',
+            link: 'https://www.dropbox.com/s/jeu9e8oys2dr10s/9ine%20rePublic-Kalimba%20de%20Luna-Remix.mp3', 
+            banner: '/img/canva/Kalimba.png',
+            type: 'dropbox'},
+        {   title: 'Heart Of Stone', 
+            music: '<b>Дэйв Стюарт</b>', 
+            lyrics: '', 
+            voice: 'Вокал: <b>Феликс Маркович</b>',
+            link: 'https://www.dropbox.com/s/4gsft50v9mpaf47/9ine%20rePublic-Heart%20of%20stone-Remix.mp3', 
+            banner: '/img/canva/HeartOfStone.png',
+            type: 'dropbox'}
+
+    ];
+
+
+  var PlayItem = 0;
+
+
+  function WritePlaylist(MyList, MyNum) {
+
+    const Player01 = document.getElementById('Player01');
+    const MyNote = document.getElementById('Note01');
+
+    MyList.forEach(function(item, i, arr) {
+
+      document.write('<p>');
+      document.write('<a href="##" id="link' + MyNum + i + '">');
+      document.write('<img src="');
+      document.write(item['banner']);
+      document.write('" class="mainphoto" width="100%" align="center" hspace="0" vspace="0" alt="');
+      document.write(item['title']);
+      document.write('" /></a>\n');
+      document.write('<br/>\n');
+      document.write('<br/>' + item['music']);
+      document.write('<br/>' + item['lyrics']);
+      document.write('</p>\n');
+      document.write('<br/><br/>\n');
+
+      var MyLink = item['link'];
+      var MyLink2;
+      if (item['type'] == 'dropbox') {
+        MyLink += '?raw=1';
+      };
+
+      if(i < arr.length - 1) {
+        MyLink2 = arr[i+1]['link'];
+        if (arr[i+1]['type'] == 'dropbox') {
+            MyLink2 += '?raw=1';
+        };
+
+      } else {
+        MyLink2 = "";
+      }
+
+      const MyHref = document.getElementById('link' + MyNum + i);
+      MyHref.onclick = (e) => {
+        var CurNote = 'Играет: <b>' + item['title'] +'</b> ('+ item['music'] + ', ' + item['voice'] + ')';
+        Player01.src = MyLink; 
+        MyNote.innerHTML = CurNote;
+        Player01.play();
+
+        const MyHref2 = document.getElementById('link' + MyNum + (i + 1));
+            if(MyHref2 !== null) {
+                Player01.onended = (e) => {
+                    MyHref2.onclick();
+                };
+            } else {
+                Player01.onended = (e) => {
+                };
+            }
+
+      };
+
+      
+    });
+
+
+  }
+
+
+</script>
+<noscript><p>У вас не поддерживается Javascript! К сожалению, некоторые функции сайта не доступны.</p></noscript>
+
+
+
+<H2>Примеры работ в области современной аранжировки, ремиксы популярных зарубежных, российских и советских хитов:</H2>
+
+<p>    
+
+    <audio id="Player01" controls="controls" preload="metadata">
+            <source src=""/>
+
+    </audio>
+</p>
+<p id="Note01"></p>
+
+
+<!--#include file="/inc/$mobile_rewrite/table01.html"-->
+
+
+<!-- Список для музыкального плеера -->
+<script type="text/javascript" >
+    WritePlaylist(Play01, 100);
+</script>
+<noscript><p>У вас не поддерживается Javascript! К сожалению, некоторые функции сайта не доступны.</p></noscript>
+
+
+<!--#include file="/inc/$mobile_rewrite/table02.html"-->
+
+
+
+
+
+<!-- Список для музыкального плеера -->
+<script type="text/javascript" >
+    WritePlaylist(Play02, 200);
+</script>
+<noscript><p>У вас не поддерживается Javascript! К сожалению, некоторые функции сайта не доступны.</p></noscript>
+
+
+<!--#include file="/inc/$mobile_rewrite/table03.html"-->
+
+
+
+<br/><br/>
+
+<p>Информацию по заказу работ смотрите <a href="../order/index.html">здесь</a></p>
+
+
+<!--#include file="/inc/telegramshare.html"-->
+
+
+<!--# else -->
+
+
+<!--#include file="/inc/maintenance.html"-->
+
+
+<!--# endif -->
+
+
+
+
+<!--#include file="/inc/bottom.html"-->
+

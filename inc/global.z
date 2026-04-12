@@ -1,0 +1,12 @@
+<!--# 	set var="mail" value="m@absov.com" -->
+<!--# 	set var="web" value="http://www.absov.com" -->
+<!--# 	set var="langtext" value="<nobr><a href=\"/ru\">RU</a>, <a href=\"/en\">EN</a></nobr>" -->
+<!--# 	set var="apocalipsis" value="proishodit" -->
+<!--# 	set var="mincontext" value="no" -->
+<!--# if expr="$allowed_country = yes" -->
+<!--# 	set var="loyal" value="YES" -->
+<!--# elif expr="$allowed_state = yes" -->
+<!--# 	set var="loyal" value="YES" -->
+<!--# else -->
+<!--# 	set var="loyal" value="NO" -->
+<!--# endif -->

@@ -1,0 +1,56 @@
+<div style="display: inline" class="knopki">
+
+<div class="fb-share-button" data-href="http://<!--#echo var="host" --><!--#echo var="request_uri" -->" data-type="button_count"></div>
+
+&nbsp;&nbsp;
+
+<div class="fb-follow" data-href="https://www.facebook.com/maksym.abakumov" data-colorscheme="light" data-layout="button_count" data-show-faces="true"></div>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<br/>
+
+<!--# if expr="$lang = ru" -->
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<!-- Put this div tag to the place, where the Like block will be -->
+<div style="display: inline" id="vk_like"></div>
+<script type="text/javascript">
+VK.Widgets.Like("vk_like", {type: "button", height: 20});
+</script>
+
+
+<!--# elif expr="$lang = en" -->
+
+
+<!-- Поместите этот тег туда, где должна отображаться кнопка "Поделиться". -->
+<div class="g-plus" data-action="share" data-annotation="bubble"></div>
+<!-- Поместите этот тег за последним тегом виджета Поделиться. -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'en'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+
+<!--# endif -->
+
+
+</div>
+<br/><br/><br/>
+<!--# if expr="$lang = ru" -->
+
+<script type="text/javascript" src="//yandex.st/share/share.js"
+charset="utf-8"></script>
+<div class="yashare-auto-init" data-yashareL10n="ru"
+ data-yashareType="none" data-yashareQuickServices="yaru,odnoklassniki,moimir,lj,friendfeed,moikrug,surfingbird"></div> 
+
+<!--# endif -->
+

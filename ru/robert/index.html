@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!--#set var="lang" value="ru" -->
+<!--#set var="pagename" value="Роберт Нижегородцев" -->
+<!--#set var="topic" value="" -->
+<!--#set var="topicfolder" value="" -->
+<!--#set var="description" value="песни, подтекстовки"  -->
+<!--#set var="keywords" value="Роберт Нижегородцев, музыкальный проект, песни, рок-музыка, подтекстовки" -->
+<!--#set var="ogimage" value="/img/canva/RobertBanner01.png" -->
+
+<!--#include file="/inc/global.html"-->
+<!--#include file="/$lang/inc/locals.html"-->
+<!--#include file="/inc/colors.html"-->
+<!--#include file="/inc/top.html"-->
+<!--#include file="/$lang/inc/topmenu.html"-->
+<!--#include file="/$lang/inc/leftmenu1.html"-->
+
+<!--#include file="/$lang/inc/leftmenu2.html"-->
+
+
+<!--# if expr="$loyal = YES" -->
+
+
+<!-- Список для музыкального плеера -->
+<script type="text/javascript" >
+
+
+
+     var Play01 = [
+        {   title: 'Ночная мгла', 
+            artist: 'Василий Акимов',
+            author: '-', 
+            link: 'https://www.dropbox.com/scl/fi/duwywlbxa81v1xgsbbqbx/01.mp3?rlkey=i23hdxlv92q03do9k3ehjl1ea', 
+            type: 'dropbox'},
+
+        {   title: 'Мой капитан', 
+            artist: 'Василий Акимов',
+            author: '-', 
+            link: 'https://www.dropbox.com/scl/fi/altobesd81lxhdlza5ab1/02.mp3?rlkey=khruurep1dt98xna1sr1h1z0f', 
+            type: 'dropbox'},
+
+        {   title: 'Так много раз', 
+            artist: 'Василий Акимов',
+            author: '-', 
+            link: 'https://www.dropbox.com/scl/fi/d7ukyau34kzb5cnd23233/03.mp3?rlkey=qxvy9rp436kx0f14vqthee15d', 
+            type: 'dropbox'},
+
+        {   title: 'Тебя больше нет', 
+            artist: 'Василий Акимов',
+            author: '-', 
+            link: 'https://www.dropbox.com/scl/fi/f61tp52vmi6ykmuetundb/04.mp3?rlkey=kev2vrzqls3donhwv2w8c5kgg', 
+            type: 'dropbox'},
+
+        {   title: 'Поклоны Красной королевы', 
+            artist: 'Аурика Мгои, Макс Костра, Наталья Гольцова',
+            author: 'Марина Савенкова', 
+            link: 'https://www.dropbox.com/scl/fi/wxdoopesaoy0n3i9bxmkm/05.mp3?rlkey=8rqm6nrp2yigj44cg56o16luh', 
+            type: 'dropbox'},
+
+        {   title: 'Колыбельная Алисы', 
+            artist: 'Аурика Мгои',
+            author: '-', 
+            link: 'https://www.dropbox.com/scl/fi/7inmkbpeghok6culoiydp/06.mp3?rlkey=zfzanh5432jei7cum4gh67vkk&', 
+            type: 'dropbox'},
+
+        {   title: 'Снег в апреле', 
+            artist: 'Дарья Бурлюкало, Василий Акимов',
+            author: '-', 
+            link: 'https://www.dropbox.com/scl/fi/wex4zfduo02dq8wg0hy2v/12.mp3?rlkey=jm3wa17nsn6uaix0frfc4xxsx', 
+            type: 'dropbox'},
+
+        {   title: 'Уходит время', 
+            artist: 'Василий Акимов',
+            author: 'Тото Кутуньо', 
+            link: 'https://www.dropbox.com/scl/fi/hhzsxuqy68d2ujbqncdnn/07.mp3?rlkey=o3d2gyf91j5wxy2h38eyolj83', 
+            type: 'dropbox'}
+        
+
+    ];
+
+    var Play02 = [
+
+
+
+        {   title: 'Ты покидаешь этот дом', 
+            artist: 'Василий Акимов',
+            author: '-', 
+            link: 'https://www.dropbox.com/scl/fi/pl7xb3cy2s30ztutiwfau/08.mp3?rlkey=7y0y6hcve1gddd82wbnpkh5de', 
+            type: 'dropbox'},
+
+        {   title: 'Китайская лирическая', 
+            artist: 'Василий Акимов',
+            author: '-', 
+            link: 'https://www.dropbox.com/scl/fi/v45qxwujeb489j2he14s5/09.mp3?rlkey=b7ulykfnv9091mxxkz4aj083m', 
+            type: 'dropbox'},
+
+        {   title: 'Спокойно', 
+            artist: 'Макс Костра',
+            author: 'Юрий Визбор', 
+            link: 'https://www.dropbox.com/scl/fi/qy9hxggv1nxz0wy7fyih0/10.mp3?rlkey=3i77q1on66v0jo7qd5z0i76vl', 
+            type: 'dropbox'},
+
+        {   title: 'Может быть', 
+            artist: 'Макс Костра',
+            author: 'Билли Джоэл', 
+            link: 'https://www.dropbox.com/scl/fi/5f4r2yt5bbvu486ufjtaz/11.mp3?rlkey=9qey9ykltz8j0fzcmmrc55fbw', 
+            type: 'dropbox'},
+
+ 
+        {   title: 'Снег в апреле V2', 
+            artist: 'Дарья Бурлюкало',
+            author: '-', 
+            link: 'https://www.dropbox.com/scl/fi/oj2wh51qe0c827t9ruhq0/13-2.mp3?rlkey=lj7fe76v0wnz7zaey2bfv9nhn', 
+            type: 'dropbox'},
+
+        {   title: 'Почему', 
+            artist: 'Макс Костра',
+            author: '-', 
+            link: 'https://www.dropbox.com/scl/fi/p0yj78vq0nfg53kvcf07b/14-_05a-All.mp3?rlkey=hyrfl2fd5ezwyu3qfoznvpagv', 
+            type: 'dropbox'},
+        {   title: 'Сегодня', 
+            artist: 'Макс Костра',
+            author: '-', 
+            link: 'https://www.dropbox.com/scl/fi/6htduu93f32y8dwwsxmeo/15-04-All.mp3?rlkey=3ctng93q9cgn7vhtftfa7y33a', 
+            type: 'dropbox'},        
+        {   title: 'Тень своей тени', 
+            artist: 'Макс Костра',
+            author: '-', 
+            link: 'https://www.dropbox.com/scl/fi/mf90y7saooizzz5bfw180/16-_06-All.mp3?rlkey=pabmtpbmb4dtu42rp0jk22x7j', 
+            type: 'dropbox'},
+        {   title: 'Северо-запад', 
+            artist: 'Макс Костра',
+            author: '-', 
+            link: 'https://www.dropbox.com/scl/fi/po7a3ypz1sg2lsrnd4ctp/17.mp3?rlkey=d4dxoda9b3jrq7tlmgw7o2org', 
+            type: 'dropbox'}        
+
+        
+    ];
+
+
+var PlayItem = 0;
+
+
+  function WritePlaylist(MyList, MyNum, MyNum2) {
+
+    const Player01 = document.getElementById('Player01');
+    const MyNote = document.getElementById('Note01');
+
+    MyList.forEach(function(item, i, arr) {
+
+      document.write('<LI>');
+      document.write('<a href="##" id="link' + MyNum + i + '"><b>');
+      document.write(item['title']);
+      document.write('</b>');
+      if (item['author'] != '-') {
+        document.write(' - музыка: '); 
+        document.write(item['author']);      
+      };
+      document.write(' - поёт '); 
+      document.write(item['artist']);      
+
+      document.write('</a>');
+      document.write('</LI>');
+      var MyLink = item['link'];
+      var MyLink2;
+      if (item['type'] == 'dropbox') {
+        MyLink += '&raw=1';
+      };
+
+      if(i < arr.length - 1) {
+        MyLink2 = arr[i+1]['link'];
+        if (arr[i+1]['type'] == 'dropbox') {
+            MyLink2 += '&raw=1';
+        };
+
+      } else {
+        MyLink2 = "";
+      }
+
+      const MyHref = document.getElementById('link' + MyNum + i);
+      MyHref.onclick = (e) => {
+        var CurNote = 'Играет: <b>' + item['title'] +'</b> - поёт '+ item['artist'];
+        /* var CurNote = 'Играет: <b>' + item['title'] + '</b>'; */
+        Player01.src = MyLink; 
+        MyNote.innerHTML = CurNote;
+        Player01.play();
+
+        const MyHref2 = document.getElementById('link' + MyNum + (i + 1));
+            if(MyHref2 !== null) {
+                Player01.onended = (e) => {
+                    MyHref2.onclick();
+                };
+            } else if (MyNum2 > 0) {
+                const MyHref2 = document.getElementById('link' + MyNum2 + 0);
+                if(MyHref2 !== null) {
+                    Player01.onended = (e) => {
+                        MyHref2.onclick();
+                    };
+                } else {
+                    Player01.onended = (e) => {
+                    };
+                };
+
+            } else {
+                Player01.onended = (e) => {
+                };
+            }
+
+      };
+
+      
+    });
+
+
+  }
+
+
+</script>
+<noscript><p>У вас не поддерживается Javascript! К сожалению, некоторые функции сайта не доступны.</p></noscript>
+
+
+
+
+<br/><br/>
+
+
+<p>    
+    <audio id="Player01" controls="controls" preload="metadata">
+            <source src=""/>
+
+    </audio>
+</p>
+<p id="Note01"></p>
+
+
+
+<!--#include file="/inc/$mobile_rewrite/table01.html"-->
+
+<UL class="mylist2">
+
+<!-- Список для музыкального плеера -->
+<script type="text/javascript" >
+    WritePlaylist(Play01, 100, 200);
+</script>
+<noscript><p>У вас не поддерживается Javascript! К сожалению, некоторые функции сайта не доступны.</p></noscript>
+
+
+<br/><br/>
+</UL>
+<!--#include file="/inc/$mobile_rewrite/table02.html"-->
+
+
+<UL class="mylist2">
+
+
+<!-- Список для музыкального плеера -->
+<script type="text/javascript" >
+    WritePlaylist(Play02, 200, 100);
+</script>
+<noscript><p>У вас не поддерживается Javascript! К сожалению, некоторые функции сайта не доступны.</p></noscript>
+
+
+<br/><br/>
+
+
+
+</UL>
+
+
+
+
+<!--#include file="/inc/$mobile_rewrite/table03.html"-->
+
+
+
+<p>Аранжировка <b>Максима Абакумова</b>
+<br/>Слова и музыка <b>Роберта Нижегородцева</b></p>
+
+
+
+<!--#include file="/inc/telegramshare.html"-->
+
+
+
+<!--# else -->
+
+
+<!--#include file="/inc/maintenance.html"-->
+
+
+<!--# endif -->
+
+
+<script type="text/javascript" >
+
+    const MyHref3 = document.getElementById('link' + 100 + 0);
+        if(MyHref3 !== null) {
+            MyHref3.onclick();
+        };
+
+</script>
+
+
+<!--#include file="/inc/bottom.html"-->
+

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!--#set var="lang" value="ru" -->
+<!--#set var="pagename" value="Студия компьютерной музыки, обучение" -->
+<!--#set var="topic" value="" -->
+<!--#set var="topicfolder" value="" -->
+<!--#set var="description" value="Информация об обучении в студии компьютерной музыки, примеры работ учеников"  -->
+<!--#set var="keywords" value="аранжировка, школа, композиция, обучение, уроки, примеры работ учеников" -->
+<!--#set var="ogimage" value="/img/canva/SchoolBanner.png" -->
+
+<!--#include file="/inc/global.html"-->
+<!--#include file="/$lang/inc/locals.html"-->
+<!--#include file="/inc/colors.html"-->
+<!--#include file="/inc/top.html"-->
+<!--#include file="/$lang/inc/topmenu.html"-->
+<!--#include file="/$lang/inc/leftmenu1.html"-->
+
+<!--#include file="/$lang/inc/leftmenu2.html"-->
+
+
+<!--# if expr="$loyal = YES" -->
+
+
+<!-- Список для музыкального плеера -->
+<script type="text/javascript" >
+
+
+
+    var Play01 = [
+        {   title: 'П. И. Чайковский - Марш из Детского альбома', 
+            author: 'Ольга Нестерова', 
+            link: 'https://www.dropbox.com/s/z5qbn0c754ypwkn/01%20%D0%9D%D0%B5%D1%81%D1%82%D0%B5%D1%80%D0%BE%D0%B2%D0%B0%20-%20%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20-%20%D0%9C%D0%B0%D1%80%D1%88.mp3', 
+            type: 'dropbox'},
+
+        {   title: 'И. С. Бах - Шутка', 
+            author: 'Алина Жигалина', 
+            link: 'https://www.dropbox.com/s/fqzczfinenbtxmy/02%20%D0%96%D0%B8%D0%B3%D0%B0%D0%BB%D0%B8%D0%BD%D0%B0%20-%20%D0%91%D0%B0%D1%85%20-%20%D0%A8%D1%83%D1%82%D0%BA%D0%B0.mp3', 
+            type: 'dropbox'},
+
+        {   title: 'Л. Р. Боккерини - Менуэт (ор. 13 № 5)', 
+            author: 'Ольга Нестерова', 
+            link: 'https://www.dropbox.com/s/f927c50pwbciitn/03%20%D0%9D%D0%B5%D1%81%D1%82%D0%B5%D1%80%D0%BE%D0%B2%D0%B0%20-%20%D0%9C%D0%B5%D0%BD%D1%83%D1%8D%D1%82.mp3', 
+            type: 'dropbox'},
+        {   title: 'Ж. Бизе - Увертюра к опере "Кармен"', 
+            author: 'Алина Жигалина', 
+            link: 'https://www.dropbox.com/s/u5j04nx1xs3shs6/04%20%D0%96%D0%B8%D0%B3%D0%B0%D0%BB%D0%B8%D0%BD%D0%B0%20-%20%D0%91%D0%B8%D0%B7%D0%B5%20-%20%D0%A3%D0%B2%D0%B5%D1%80%D1%82%D1%8E%D1%80%D0%B0.mp3', 
+            type: 'dropbox'},
+        {   title: 'Э. Григ - В пещере горного короля', 
+            author: 'Никита Сурин', 
+            link: 'https://www.dropbox.com/s/jtv9td02xmoss9g/05%20%D0%A1%D1%83%D1%80%D0%B8%D0%BD%20-%20%D0%93%D1%80%D0%B8%D0%B3%20-%20%D0%92%20%D0%BF%D0%B5%D1%89%D0%B5%D1%80%D0%B5%20%D0%B3%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BE%D1%80%D0%BE%D0%BB%D1%8F.mp3', 
+            type: 'dropbox'},
+        {   title: 'М. И. Красев - Елочка', 
+            author: 'Дмитрий Тукфиев', 
+            link: 'https://www.dropbox.com/s/o9f4uhf402swsrd/06%20%D0%A2%D1%83%D0%BA%D1%84%D0%B8%D0%B5%D0%B2%20-%20%D0%95%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.mp3', 
+            type: 'dropbox'},
+        {   title: 'В. А. Моцарт - Аллегро', 
+            author: 'Алина Жигалина', 
+            link: 'https://www.dropbox.com/s/m0gsy5oohmoq2fa/07%20%D0%96%D0%B8%D0%B3%D0%B0%D0%BB%D0%B8%D0%BD%D0%B0%20-%20%D0%9C%D0%BE%D1%86%D0%B0%D1%80%D1%82%20-%20%D0%90%D0%BB%D0%BB%D0%B5%D0%B3%D1%80%D0%BE.mp3', 
+            type: 'dropbox'},
+        {   title: 'С. Джоплин - Регтайм', 
+            author: 'Светлана Хрусткова', 
+            link: 'https://www.dropbox.com/s/dnu0hfnq4btnlsk/08%20%D0%A5%D1%80%D1%83%D1%81%D1%82%D0%BA%D0%BE%D0%B2%D0%B0%20-%20%D0%A0%D0%B5%D0%B3%D1%82%D0%B0%D0%B9%D0%BC.mp3', 
+            type: 'dropbox'},
+        {   title: 'П. И. Чайковский - Вальс из Детского альбома', 
+            author: 'Ольга Манжелей', 
+            link: 'https://www.dropbox.com/s/5meac512dtosc0d/09%20%D0%9C%D0%B0%D0%BD%D0%B6%D0%B5%D0%BB%D0%B5%D0%B9%20-%20%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20-%20%D0%92%D0%B0%D0%BB%D1%8C%D1%81.mp3', 
+            type: 'dropbox'},
+        {   title: 'П. И. Чайковский - Неаполитанская песенка из Детского альбома', 
+            author: 'Алина Жигалина', 
+            link: 'https://www.dropbox.com/s/322u7sbjg3n5lgm/10%20%D0%96%D0%B8%D0%B3%D0%B0%D0%BB%D0%B8%D0%BD%D0%B0%20-%20%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20-%20%D0%9D%D0%B5%D0%B0%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BF%D0%B5%D1%81%D0%B5%D0%BD%D0%BA%D0%B0.mp3', 
+            type: 'dropbox'},
+        {   title: 'Ж. Бизе - Увертюра к опере "Кармен"', 
+            author: 'Ольга Нестерова', 
+            link: 'https://www.dropbox.com/s/ti6gkckmbwg66lz/11%20%D0%9D%D0%B5%D1%81%D1%82%D0%B5%D1%80%D0%BE%D0%B2%D0%B0%20-%20%D0%91%D0%B8%D0%B7%D0%B5%20-%20%D0%A3%D0%B2%D0%B5%D1%80%D1%82%D1%8E%D1%80%D0%B0.mp3', 
+            type: 'dropbox'},
+        {   title: 'Э. Григ - В пещере горного короля', 
+            author: 'Светлана Хрусткова', 
+            link: 'https://www.dropbox.com/s/nbvw7kigzxxmx44/12%20%D0%A5%D1%80%D1%83%D1%81%D1%82%D0%BA%D0%BE%D0%B2%D0%B0%20-%20%D0%93%D1%80%D0%B8%D0%B3%20-%20%D0%92%20%D0%BF%D0%B5%D1%89%D0%B5%D1%80%D0%B5%20%D0%B3%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BE%D1%80%D0%BE%D0%BB%D1%8F.mp3', 
+            type: 'dropbox'},
+        {   title: 'Мама', 
+            author: 'Евгений Ермолаев', 
+            link: 'https://www.dropbox.com/s/dcvzunlmu8op35n/13%20%D0%95%D1%80%D0%BC%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%20-%20%D0%9C%D0%B0%D0%BC%D0%B0.mp3', 
+            type: 'dropbox'},
+        {   title: 'П. И. Чайковский - Немецкая песенка из Детского альбома', 
+            author: 'Ольга Нестерова', 
+            link: 'https://www.dropbox.com/s/tboh30iys9vseqk/14%20%D0%9D%D0%B5%D1%81%D1%82%D0%B5%D1%80%D0%BE%D0%B2%D0%B0%20-%20%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20-%20%D0%9D%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B0%D1%8F%20%D0%BF%D0%B5%D1%81%D0%B5%D0%BD%D0%BA%D0%B0.mp3', 
+            type: 'dropbox'},
+        {   title: 'П. И. Чайковский - Марш из Детского альбома', 
+            author: 'Евгений Ермолаев', 
+            link: 'https://www.dropbox.com/s/2eframzyw7m4xlv/15%20%D0%95%D1%80%D0%BC%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%20-%20%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20-%20%D0%9C%D0%B0%D1%80%D1%88.mp3', 
+            type: 'dropbox'},
+        {   title: 'А. Г. Рубинштейн - Мелодия', 
+            author: 'Евгений Ермолаев', 
+            link: 'https://www.dropbox.com/s/87z6rh77uk5vt60/16%20%D0%95%D1%80%D0%BC%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%20-%20%D0%A0%D1%83%D0%B1%D0%B8%D0%BD%D1%88%D1%82%D0%B5%D0%B9%D0%BD%20-%20%D0%9C%D0%B5%D0%BB%D0%BE%D0%B4%D0%B8%D1%8F.mp3', 
+            type: 'dropbox'},
+        {   title: 'М. Равель - Болеро', 
+            author: 'Алина Жигалина', 
+            link: 'https://www.dropbox.com/s/bnk0qhkhxtb9ree/17%20%D0%96%D0%B8%D0%B3%D0%B0%D0%BB%D0%B8%D0%BD%D0%B0%20-%20%D0%A0%D0%B0%D0%B2%D0%B5%D0%BB%D1%8C%20-%20%D0%91%D0%BE%D0%BB%D0%B5%D1%80%D0%BE.mp3', 
+            type: 'dropbox'}
+    ];
+
+    var Play02 = [
+        {   title: 'М. Легран - Шербурские зонтики', 
+            author: 'Дмитрий Тукфиев', 
+            link: 'https://www.dropbox.com/s/t1chi1xbi7g06mb/18%20%D0%A2%D1%83%D0%BA%D1%84%D0%B8%D0%B5%D0%B2%20-%20%D0%9B%D0%B5%D0%B3%D1%80%D0%B0%D0%BD%20-%20%D0%A8%D0%B5%D1%80%D0%B1%D1%83%D1%80%D1%81%D0%BA%D0%B8%D0%B5%20%D0%B7%D0%BE%D0%BD%D1%82%D0%B8%D0%BA%D0%B8.mp3', 
+            type: 'dropbox'},
+        {   title: 'М. Легран - Шербурские зонтики', 
+            author: 'Ольга Нестерова', 
+            link: 'https://www.dropbox.com/s/jphl2o9en6tlvbm/19%20%D0%9D%D0%B5%D1%81%D1%82%D0%B5%D1%80%D0%BE%D0%B2%D0%B0%20-%20%D0%9B%D0%B5%D0%B3%D1%80%D0%B0%D0%BD%20-%20%D0%A8%D0%B5%D1%80%D0%B1%D1%83%D1%80%D1%81%D0%BA%D0%B8%D0%B5%20%D0%B7%D0%BE%D0%BD%D1%82%D0%B8%D0%BA%D0%B8.mp3', 
+            type: 'dropbox'},
+        {   title: 'В. А. Моцарт - Аллегро', 
+            author: 'Евгений Ермолаев', 
+            link: 'https://www.dropbox.com/s/mm4lgz2xn29ncrf/20%20%D0%95%D1%80%D0%BC%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%20-%20%D0%9C%D0%BE%D1%86%D0%B0%D1%80%D1%82%20-%20%D0%90%D0%BB%D0%BB%D0%B5%D0%B3%D1%80%D0%BE.mp3', 
+            type: 'dropbox'},
+
+        {   title: 'П. И. Чайковский - Полька из Детского альбома', 
+            author: 'Светлана Хрусткова', 
+            link: 'https://www.dropbox.com/s/el5my76wfavmaz3/21%20%D0%A5%D1%80%D1%83%D1%81%D1%82%D0%BA%D0%BE%D0%B2%D0%B0%20-%20%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20-%20%D0%9F%D0%BE%D0%BB%D1%8C%D0%BA%D0%B0.mp3', 
+            type: 'dropbox'},
+        {   title: 'Э. Григ - В пещере горного короля', 
+            author: 'Александр Копылов', 
+            link: 'https://www.dropbox.com/s/vipeslm4uomsxla/22%20%D0%9A%D0%BE%D0%BF%D1%8B%D0%BB%D0%BE%D0%B2%20-%20%D0%93%D1%80%D0%B8%D0%B3%20-%20%D0%92%20%D0%BF%D0%B5%D1%89%D0%B5%D1%80%D0%B5%20%D0%B3%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BE%D1%80%D0%BE%D0%BB%D1%8F.mp3', 
+            type: 'dropbox'},
+        {   title: 'П. И. Чайковский - Французская песенка из Детского альбома', 
+            author: 'Алина Жигалина', 
+            link: 'https://www.dropbox.com/s/bop14hsa5qtxdtz/23%20%D0%96%D0%B8%D0%B3%D0%B0%D0%BB%D0%B8%D0%BD%D0%B0%20-%20%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20-%20%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D1%83%D0%B7%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BF%D0%B5%D1%81%D0%B5%D0%BD%D0%BA%D0%B0.mp3', 
+            type: 'dropbox'},
+        {   title: 'А. П. Петров - Утро', 
+            author: 'Ольга Нестерова', 
+            link: 'https://www.dropbox.com/s/jgw7n2ml8bmg9hm/24%20%D0%9D%D0%B5%D1%81%D1%82%D0%B5%D1%80%D0%BE%D0%B2%D0%B0%20-%20%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%20-%20%D0%A3%D1%82%D1%80%D0%BE.mp3', 
+            type: 'dropbox'},
+        {   title: 'П. И. Чайковский - Неаполитанская песенка из Детского альбома - версия I', 
+            author: 'Светлана Хрусткова', 
+            link: 'https://www.dropbox.com/s/yy4pa1tjozwgb4d/25%20%D0%A5%D1%80%D1%83%D1%81%D1%82%D0%BA%D0%BE%D0%B2%D0%B0%20-%20%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20-%20%D0%9D%D0%B5%D0%B0%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BF%D0%B5%D1%81%D0%B5%D0%BD%D0%BA%D0%B0%20V1.mp3', 
+            type: 'dropbox'},
+        {   title: 'П. И. Чайковский - Неаполитанская песенка из Детского альбома - версия II', 
+            author: 'Светлана Хрусткова', 
+            link: 'https://www.dropbox.com/s/0nvj95md926lrou/26%20%D0%A5%D1%80%D1%83%D1%81%D1%82%D0%BA%D0%BE%D0%B2%D0%B0%20-%20%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20-%20%D0%9D%D0%B5%D0%B0%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BF%D0%B5%D1%81%D0%B5%D0%BD%D0%BA%D0%B0%20V2.mp3', 
+            type: 'dropbox'},
+        {   title: 'Б. Кемпферт - Strangers in the Night', 
+            author: 'Александр Заритовский', 
+            link: 'https://www.dropbox.com/s/al12gcfeh83za64/27%20%D0%97%D0%B0%D1%80%D0%B8%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20-%20Strengers%20In%20The%20Night.mp3', 
+            type: 'dropbox'},
+        {   title: 'И. С. Бах - Шутка', 
+            author: 'Ольга Манжелей', 
+            link: 'https://www.dropbox.com/s/o51zybxr11ncrrm/28%20%D0%9C%D0%B0%D0%BD%D0%B6%D0%B5%D0%BB%D0%B5%D0%B9%20-%20%D0%91%D0%B0%D1%85%20-%20%D0%A8%D1%83%D1%82%D0%BA%D0%B0.mp3', 
+            type: 'dropbox'},
+        {   title: 'И. С. Бах - Шутка', 
+            author: 'Светлана Хрусткова', 
+            link: 'https://www.dropbox.com/s/jecg46pn87u7c8u/29%20%D0%A5%D1%80%D1%83%D1%81%D1%82%D0%BA%D0%BE%D0%B2%D0%B0%20-%20%D0%91%D0%B0%D1%85%20-%20%D0%A8%D1%83%D1%82%D0%BA%D0%B0.mp3', 
+            type: 'dropbox'},
+        {   title: 'М. Равель - Болеро', 
+            author: 'Ольга Нестерова', 
+            link: 'https://www.dropbox.com/s/hwf7zbh54oalu04/30%20%D0%9D%D0%B5%D1%81%D1%82%D0%B5%D1%80%D0%BE%D0%B2%D0%B0%20-%20%D0%A0%D0%B0%D0%B2%D0%B5%D0%BB%D1%8C%20-%20%D0%91%D0%BE%D0%BB%D0%B5%D1%80%D0%BE.mp3', 
+            type: 'dropbox'},
+        {   title: 'Э. Григ - В пещере горного короля', 
+            author: 'Ольга Нестерова', 
+            link: 'https://www.dropbox.com/s/1i2key8bxnngt88/31%20%D0%9D%D0%B5%D1%81%D1%82%D0%B5%D1%80%D0%BE%D0%B2%D0%B0%20-%20%D0%93%D1%80%D0%B8%D0%B3%20-%20%D0%92%20%D0%BF%D0%B5%D1%89%D0%B5%D1%80%D0%B5%20%D0%B3%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BE%D1%80%D0%BE%D0%BB%D1%8F.mp3', 
+            type: 'dropbox'},
+        {   title: 'П. И. Чайковский - Вальс из Детского альбома', 
+            author: 'Ольга Нестерова', 
+            link: 'https://www.dropbox.com/s/qhln7oagpbrcyj7/32%20%D0%9D%D0%B5%D1%81%D1%82%D0%B5%D1%80%D0%BE%D0%B2%D0%B0%20-%20%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20-%20%D0%92%D0%B0%D0%BB%D1%8C%D1%81.mp3', 
+            type: 'dropbox'},
+        {   title: 'П. И. Чайковский - Французская песенка из Детского альбома', 
+            author: 'Ольга Нестерова', 
+            link: 'https://www.dropbox.com/s/cowm1h6n57o2hge/33%20%D0%9D%D0%B5%D1%81%D1%82%D0%B5%D1%80%D0%BE%D0%B2%D0%B0%20-%20%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20-%20%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D1%83%D0%B7%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BF%D0%B5%D1%81%D0%B5%D0%BD%D0%BA%D0%B0.mp3', 
+            type: 'dropbox'},
+        {   title: 'А. П. Петров - Утро из фильма "Служебный роман"', 
+            author: 'Светлана Хрусткова', 
+            link: 'https://www.dropbox.com/s/r8st9abwxj5k6hw/34%20%D0%A5%D1%80%D1%83%D1%81%D1%82%D0%BA%D0%BE%D0%B2%D0%B0%20-%20%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%20-%20%D0%A3%D1%82%D1%80%D0%BE.mp3', 
+            type: 'dropbox'},
+        {   title: 'C. А. Хрусткова - Вальс', 
+            author: 'Светлана Хрусткова', 
+            link: 'https://www.dropbox.com/s/q7sjm1kj7ob9ccq/35%20%D0%A5%D1%80%D1%83%D1%81%D1%82%D0%BA%D0%BE%D0%B2%D0%B0%20-%20%D0%92%D0%B0%D0%BB%D1%8C%D1%81.mp3', 
+            type: 'dropbox'}       
+    ];
+
+
+  var PlayItem = 0;
+
+
+  function WritePlaylist(MyList, MyNum) {
+
+    const Player01 = document.getElementById('Player01');
+    const MyNote = document.getElementById('Note01');
+
+    MyList.forEach(function(item, i, arr) {
+
+      document.write('<LI>');
+      document.write('<a href="##" id="link' + MyNum + i + '">');
+      document.write(item['author']);
+      document.write(' - ');
+      document.write(item['title']);
+      document.write('</a>');
+      document.write('</LI>');
+      var MyLink = item['link'];
+      var MyLink2;
+      if (item['type'] == 'dropbox') {
+        MyLink += '?raw=1';
+      };
+
+      if(i < arr.length - 1) {
+        MyLink2 = arr[i+1]['link'];
+        if (arr[i+1]['type'] == 'dropbox') {
+            MyLink2 += '?raw=1';
+        };
+
+      } else {
+        MyLink2 = "";
+      }
+
+      const MyHref = document.getElementById('link' + MyNum + i);
+      MyHref.onclick = (e) => {
+        var CurNote = 'Играет: <b>' + item['author'] +' - '+ item['title'] + '</b>';
+        Player01.src = MyLink; 
+        MyNote.innerHTML = CurNote;
+        Player01.play();
+
+        const MyHref2 = document.getElementById('link' + MyNum + (i + 1));
+            if(MyHref2 !== null) {
+                Player01.onended = (e) => {
+                    MyHref2.onclick();
+                };
+            } else {
+                Player01.onended = (e) => {
+                };
+            }
+
+      };
+
+      
+    });
+
+
+  }
+
+
+</script>
+<noscript><p>У вас не поддерживается Javascript! К сожалению, некоторые функции сайта не доступны.</p></noscript>
+
+
+
+<img src="/img/canva/SchoolBannerTop.png" class="mainphoto" width="100%" align="center" hspace="0" vspace="0" alt="Школа аранжировки - избранные работы учеников" />
+
+
+<br/><br/>
+
+
+<p>Программа обучения детей "<b>Студия компьютерной музыки</b>" подготовлена и внедрена на основе стандартов, рекомендованных Министерством культуры Российской Федерации. </p>
+
+<p>Программа имеет художественно-эстетическую направленность и предназначена для приобщения учащихся к музыкально-творческой деятельности с помощью музыкального инструментария нового поколения, построенного на основе цифровых технологий. 
+</p>
+
+<p>Преподавание ведется в ГБУДО г. Москвы "<i>Детская школа искусств имени Н. Г. Рубинштейна</i>"</p>
+
+
+<p>Записаться в школу можно <a href="https://rubinstein.music.mos.ru/" target="_blank">по ссылке</a></p>
+<p><a href="http://www.rubinshtein.ru" target="_blank">Дополнительная информация о школе</a></p>
+
+<p>    
+    <audio id="Player01" controls="controls" preload="metadata">
+            <source src=""/>
+
+    </audio>
+</p>
+<p id="Note01"></p>
+
+<p>Альбом избранных работ учеников по компьютерной аранжировке. Обучение производится в режиме индивидуальных занятий и мини-групп по 2 человека.</p>
+
+
+
+<!--#include file="/inc/$mobile_rewrite/table01.html"-->
+
+<H2>Часть I</H2>
+<OL class="mylist2">
+
+<!-- Список для музыкального плеера -->
+<script type="text/javascript" >
+    WritePlaylist(Play01, 100);
+</script>
+<noscript><p>У вас не поддерживается Javascript! К сожалению, некоторые функции сайта не доступны.</p></noscript>
+
+
+<br/><br/>
+</OL>
+<!--#include file="/inc/$mobile_rewrite/table02.html"-->
+
+<H2>Часть II</H2>
+
+
+<OL class="mylist2">
+
+
+<!-- Список для музыкального плеера -->
+<script type="text/javascript" >
+    WritePlaylist(Play02, 200);
+</script>
+<noscript><p>У вас не поддерживается Javascript! К сожалению, некоторые функции сайта не доступны.</p></noscript>
+
+
+<br/><br/>
+
+
+
+</OL>
+
+
+
+
+<!--#include file="/inc/$mobile_rewrite/table03.html"-->
+
+
+
+
+<!--#include file="/inc/telegramshare.html"-->
+
+<!--# else -->
+
+
+<!--#include file="/inc/maintenance.html"-->
+
+
+<!--# endif -->
+
+
+
+
+<!--#include file="/inc/bottom.html"-->
+
