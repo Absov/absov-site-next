@@ -5,6 +5,9 @@
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="canonical" href="https://<!--#echo var="host" --><!--#echo var="request_uri" -->" />
         <link rel="manifest" href="/manifest.json" />
+        <!--# if expr="$robots" -->
+        <meta name="robots" content="<!--#echo var="robots" encoding="none"-->">
+        <!--# endif -->
         <meta charset="utf-8" />
         <meta name="author" content="<!--#echo var="author" encoding="none"-->" />
         <meta name="copyright" lang="<!--#echo var="lang" encoding="none"-->" content="<!--#echo var="copyright" encoding="none"-->" />
