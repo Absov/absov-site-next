@@ -242,11 +242,16 @@
   },
   "active": "a949f32472261f38",
   "lastOpenFiles": [
-    "DEPLOY.md",
-    "TODO.md",
+    "ru/creative/archive.html",
+    "ru/creative/screen.html",
+    "ru/creative/reconstruction.html",
+    "ru/creative/artemiev.html",
+    "ru/creative/composer.html",
     "STRUCTURE.md",
     "README.md",
+    "favicon.png",
     "favicon.svg",
-    "favicon.png"
+    "DEPLOY.md",
+    "TODO.md"
   ]
 }
