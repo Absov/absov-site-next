@@ -1,0 +1,264 @@
+{
+  "main": {
+    "id": "61521d247719a5a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "2e46989de363465a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e9583f9cd6f71584",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "2e59c317fdd6fe5c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "STRUCTURE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "STRUCTURE"
+            }
+          },
+          {
+            "id": "86fa9b0c4030276f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DEPLOY.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DEPLOY"
+            }
+          },
+          {
+            "id": "a949f32472261f38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MIGRATION.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MIGRATION"
+            }
+          },
+          {
+            "id": "0e4204733a86c87a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "99dda69c6d12e943",
+    "type": "split",
+    "children": [
+      {
+        "id": "37833d34e91e61de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "26a2bb3657c72782",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "7f08d44b942f353f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "72d09e433fa4e817",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9d62f70554ed2a0c",
+    "type": "split",
+    "children": [
+      {
+        "id": "6df073522dd007d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "77c8e78f145c2a70",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TODO.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для TODO"
+            }
+          },
+          {
+            "id": "6dfe15506359e48e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "TODO.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из TODO"
+            }
+          },
+          {
+            "id": "cca691ba2f277575",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "4c61b8199a59048c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Все свойства"
+            }
+          },
+          {
+            "id": "253c4e5566e1f6a8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "TODO.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура TODO"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false
+    }
+  },
+  "active": "a949f32472261f38",
+  "lastOpenFiles": [
+    "img/docs/abakumov-music-and-electronics-grand-prix-2025.pdf",
+    "img/docs/АБАКУМОВ диплом Музыка и электроника 25.pdf.pdf",
+    "img/docs/sertifikat-ai-conference-2026.pdf",
+    "img/docs/Sertifikat_doklad4iky-Абакумов_dmsh21.pdf",
+    "img/docs",
+    "img/Новая папка",
+    "README.md",
+    "STRUCTURE.md",
+    "TODO.md",
+    "MIGRATION.md",
+    "ru/contacts/inc/topic.html",
+    "ru/contacts/inc/topicmenu.html",
+    "ru/contacts/index.html",
+    "ru/contacts/inc",
+    "ru/contacts",
+    "favicon.png",
+    "favicon.svg",
+    "DEPLOY.md"
+  ]
+}
