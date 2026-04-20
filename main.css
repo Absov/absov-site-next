@@ -201,7 +201,7 @@ li {
     margin-bottom: 15pt;
 }
 b, i {
-    color: <!--#echo var="color1" encoding="none"-->;
+    color: <!--#echo var="color5" encoding="none"-->;
 }
 
 a:link {
@@ -210,10 +210,10 @@ a:link {
 }
 a:visited {
     text-decoration:none;
-    color: <!--#echo var="color1" encoding="none"-->;
+    color: <!--#echo var="color5" encoding="none"-->;
 }
 a:hover {
-    border-bottom:<!--#echo var="color1" encoding="none"--> 1px dotted;
+    border-bottom:<!--#echo var="color5" encoding="none"--> 1px dotted;
 }
 a:hover.logo {
     border-bottom-style: none;
@@ -331,11 +331,11 @@ table, tr, td {
 
 }
 a:link.blackcolor {
-            color: <!--#echo var="color2" encoding="none"-->;
+            color: <!--#echo var="color4" encoding="none"-->;
             
 }
 a:visited.blackcolor {
-            color: <!--#echo var="color2" encoding="none"-->;
+            color: <!--#echo var="color5" encoding="none"-->;
             
 }
 .divscroll {

@@ -242,6 +242,9 @@
   },
   "active": "a949f32472261f38",
   "lastOpenFiles": [
+    "img/absov_logo.svg",
+    "img/absov_logo_old.svg",
+    "img/monogram.svg",
     "inc/desk/table02a.html",
     "inc/desk/table02 2.html",
     "inc/desk/table01a.html",
@@ -256,7 +259,6 @@
     "STRUCTURE.md",
     "TODO.md",
     "MIGRATION.md",
-    "ru/contacts/inc/topic.html",
     "favicon.png",
     "favicon.svg",
     "DEPLOY.md"
